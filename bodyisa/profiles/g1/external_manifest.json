@@ -1,0 +1,29 @@
+{
+  "provenance": "Local official BFM ZIP snapshot; no Git revision claimed",
+  "upstream": "https://github.com/LeCAR-Lab/BFM-Zero/tree/minimal_inference",
+  "bfm_python_sources": {
+    "bfm_zero_inference_code/base.py": "b1cf05ef755fcccaab727c3aafb0743f9e7f07f5bcb4583e61ae3272d9262cc4",
+    "bfm_zero_inference_code/base_model.py": "88e8c628d2ba2a2d1d963516d296b29afd82c307ccfeb63ee9281d9efe9ba0c5",
+    "bfm_zero_inference_code/fb/model.py": "a54c5c4b7a044dac703249995011115d06c8d346ca9f2982ebe87d9ae79fd793",
+    "bfm_zero_inference_code/fb_cpr_aux/model.py": "1059432e0c6a6cff8d444ba30f9a24126c075511144778307fe133ed15176ba6",
+    "bfm_zero_inference_code/inference/rewards.py": "ef69faa1b0efe93387d6596c6d91b0863a1b749ca25508aaf474de22bb6ffb7a",
+    "bfm_zero_inference_code/inference/utils.py": "98ee65a0b5d1fef51283e123e280d14fd87f42856d087520c479a20269fa0a82",
+    "bfm_zero_inference_code/misc/gym_spaces.py": "9e6ae85890b66ebb55f892765437330178d9c6f465d49961b15829696244a985",
+    "bfm_zero_inference_code/nn_filters.py": "1d279d945f300acd4e545b58f80f233052b9c93edbaecb88d94fb40ec821cc15",
+    "bfm_zero_inference_code/nn_models.py": "bace2c9967320ab0cf1e570054acf1f7e0378f15690e11af11fcce462b3a9254",
+    "bfm_zero_inference_code/normalizers.py": "9b0e039e3380878d5b5caad7786d6ec0e37f1e3ae9eb48dac82085ba01175c57",
+    "common.py": "37eaaf17585f08ebf769b5ea3d70e36cbe90077e8b47060601b0ce3be3561c84",
+    "download_hf_model.py": "a44d1f116138ba00d3b930500f546ce84f935640df6f3c9c2444cb85af803339",
+    "env.py": "a65357ce9df441aa87ce812e1224393e03bea919544942967da5cdabb1f9f9d5",
+    "run_onnx.py": "3ce7779d87462fbb12eaa16ca2cbee7b8d630e7ea30f8a4f5d04fdf61ca14864"
+  },
+  "files": {
+    "checkpoint": "d8d07d7b83ad030286f44d55a48899dc42db4b48000132fffad063653a6eb49e",
+    "model_config": "aee5e94fd089979cb31d1f1a5fa4905e926398231d46dc8eb2047e25b8d2935b",
+    "model_init": "b8df2d6006fbeda9a0bb9a9eb3f21dcccadf165f2252fce108714f81655a0094",
+    "motion": "48fc271ad378e397f70cde265ccbe91e56c16ef4b889945ed76eb71e3b87ca17",
+    "track_latent": "23756e2bf8d9d137dd37840c06ad65eba9ec54b82df076b6258192eb0d7215ad",
+    "stand_latent": "84eec1f906acbb8ecc66dbf55d2dd3c7eaa9e6c22d8b6c6b71c8130e1caab16b",
+    "xml": "7cbb7f1114964f4a0eb529ecc53b4d845336fdbf4fbc5bc0442348deced0a8d5"
+  }
+}

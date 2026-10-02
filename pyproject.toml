@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bodyisa"
+version = "0.3.2"
+description = "BodyISA synchronous simulation runtime with a G1Adapter for BFM-Zero and MuJoCo"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26,<3"]
+
+[project.optional-dependencies]
+g1 = ["mujoco==3.3.7", "torch==2.5.1", "scipy==1.15.3", "safetensors==0.7.0", "pydantic==2.12.5", "gymnasium==1.2.2", "huggingface-hub", "tqdm", "einops", "imageio", "imageio-ffmpeg"]
+
+[project.scripts]
+bodyisa-mujoco = "bodyisa.bridge.jsonl:main"
+
+[tool.setuptools.packages.find]
+include = ["bodyisa*", "evaluation*"]
+
+[tool.setuptools.package-data]
+"bodyisa.profiles.g1" = ["*.json"]
+evaluation = ["baseline_inventory.json"]

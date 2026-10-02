@@ -1,0 +1,194 @@
+{
+  "status": "SMOKE_PASS",
+  "run_id": "bridge_smoke_01",
+  "seed": 91000,
+  "stages": [
+    {
+      "execution_id": "001_STAND",
+      "instruction": {
+        "opcode": "STAND",
+        "target_id": null,
+        "parameters": {}
+      },
+      "status": "SUCCESS",
+      "elapsed_sim_s": 0.8600000000000007,
+      "steps": 43,
+      "evidence_file": "001_STAND.jsonl"
+    },
+    {
+      "execution_id": "002_TRACK_MOTION",
+      "instruction": {
+        "opcode": "TRACK_MOTION",
+        "target_id": "dance_prefix_500",
+        "parameters": {
+          "contract_profile": "JOINT_TRAJECTORY_V2"
+        }
+      },
+      "status": "SUCCESS",
+      "elapsed_sim_s": 11.100000000000469,
+      "steps": 555,
+      "evidence_file": "002_TRACK_MOTION.jsonl"
+    },
+    {
+      "execution_id": "003_STAND",
+      "instruction": {
+        "opcode": "STAND",
+        "target_id": null,
+        "parameters": {}
+      },
+      "status": "SUCCESS",
+      "elapsed_sim_s": 0.5200000000000813,
+      "steps": 26,
+      "evidence_file": "003_STAND.jsonl"
+    }
+  ],
+  "metrics": {
+    "samples": 500,
+    "expected_samples": 500,
+    "mean_of_frame_joint_rmse_rad": 0.10801315658006287,
+    "active_group_mean_of_frame_rmse_rad": 0.12145667936576852,
+    "max_25frame_mean_rad": 0.23536720333804087,
+    "rolling_window": {
+      "value": 0.23536720333804087,
+      "available": true,
+      "reason": null
+    },
+    "max_consecutive_excess_s": 0.14,
+    "max_abs_single_joint_error_rad": 1.6309293331577415,
+    "active_joint_indices": [
+      2,
+      3,
+      15,
+      16,
+      17,
+      18,
+      22,
+      23,
+      24,
+      25,
+      27,
+      28
+    ]
+  },
+  "track_exit": "SUCCESS",
+  "handoffs": [
+    {
+      "source": "001_STAND",
+      "target": "002_TRACK_MOTION",
+      "sim_time": 0.8600000000000007,
+      "context_equal": true,
+      "physical_equal": true
+    },
+    {
+      "source": "002_TRACK_MOTION",
+      "target": "003_STAND",
+      "sim_time": 11.96000000000047,
+      "context_equal": true,
+      "physical_equal": true
+    }
+  ],
+  "root_displacement_m": 0.18124532903217883,
+  "heading_change_abs_rad": 0.2942538334066866,
+  "baseline_comparison": {
+    "root_displacement_m": 0.18124532903217883,
+    "heading_change_abs_rad": 0.2942538334066866,
+    "metrics": {
+      "samples": 500,
+      "expected_samples": 500,
+      "mean_of_frame_joint_rmse_rad": 0.10801315658006287,
+      "active_group_mean_of_frame_rmse_rad": 0.12145667936576852,
+      "max_25frame_mean_rad": 0.23536720333804087,
+      "rolling_window": {
+        "value": 0.23536720333804087,
+        "available": true,
+        "reason": null
+      },
+      "max_consecutive_excess_s": 0.14,
+      "max_abs_single_joint_error_rad": 1.6309293331577415,
+      "active_joint_indices": [
+        2,
+        3,
+        15,
+        16,
+        17,
+        18,
+        22,
+        23,
+        24,
+        25,
+        27,
+        28
+      ]
+    },
+    "tolerance": {
+      "track_metric_rad": 1e-05,
+      "consecutive_excess_s": 1e-09,
+      "elapsed_sim_s": 0.04,
+      "root_displacement_m": 0.001,
+      "heading_change_rad": 0.001
+    }
+  },
+  "closed": "CLOSED",
+  "checks": {
+    "one_initialization": true,
+    "one_session": true,
+    "ready_once": true,
+    "no_permit": true,
+    "same_fixed_seed_and_proposal": true,
+    "two_verified_migrated_imports": true,
+    "three_external_executions": true,
+    "no_harness_error": true,
+    "001_STAND.jsonl_real_success": true,
+    "001_STAND.jsonl_ordinary": true,
+    "001_STAND.jsonl_invariants": true,
+    "001_STAND.jsonl_control_and_time_continuity": true,
+    "001_STAND.jsonl_generation": true,
+    "001_STAND.jsonl_elapsed_vs_baseline": true,
+    "002_TRACK_MOTION.jsonl_real_success": true,
+    "002_TRACK_MOTION.jsonl_ordinary": true,
+    "002_TRACK_MOTION.jsonl_invariants": true,
+    "002_TRACK_MOTION.jsonl_control_and_time_continuity": true,
+    "002_TRACK_MOTION.jsonl_generation": true,
+    "002_TRACK_MOTION.jsonl_elapsed_vs_baseline": true,
+    "handoff_1": true,
+    "003_STAND.jsonl_real_success": true,
+    "003_STAND.jsonl_ordinary": true,
+    "003_STAND.jsonl_invariants": true,
+    "003_STAND.jsonl_control_and_time_continuity": true,
+    "003_STAND.jsonl_generation": true,
+    "003_STAND.jsonl_elapsed_vs_baseline": true,
+    "handoff_2": true,
+    "semantic_complete_pass": true,
+    "track_exit_success": true,
+    "baseline_metric_mean_of_frame_joint_rmse_rad": true,
+    "baseline_metric_active_group_mean_of_frame_rmse_rad": true,
+    "baseline_metric_max_25frame_mean_rad": true,
+    "baseline_consecutive_duration": true,
+    "root_displacement_comparison": true,
+    "heading_comparison": true,
+    "closed": true,
+    "closed_track_rejection_no_side_effect": true,
+    "only_expected_motion_rejection": true,
+    "queries_do_not_mutate": true,
+    "eligible_after_real_stand": true
+  },
+  "issues": [],
+  "artifact_sha256": {
+    "trust.json": "93cb93cb495cbb98221ac0231a369d6ebdcaa7fdb4dd228c0180e2bca4346f14",
+    "stand_bundle.json": "9ec5ab606d7cf44bfc6784ec045d1dae4758e123ec5d22be62569866f964aa2b",
+    "track_bundle.json": "132c15dbce32b3cf3a22f9e2b0b6eb2f5465f68088912b05ae5b1746a38cbae6"
+  },
+  "raw_log_sha256": {
+    "001_STAND.jsonl": "31c1a7720468d9bd64e7416658b2ee9b0ff743d6db779ed264a8ba698487c4f8",
+    "002_TRACK_MOTION.jsonl": "685ebeddaabb81669e7262e46cc07018edab8b0809a4d96396e4e7e0d24458eb",
+    "003_STAND.jsonl": "2c58cc97f0780901a3d46d4bc6b633433fd45b170a6f09eef147405ee956dd8f",
+    "admission.jsonl": "8a1ce16270e3195c600abaf7f23422d965862036a4ae3a1f53ff54f441381e6e",
+    "bridge.jsonl": "3f03b225ed3626b43c21599ecf6f3daeb01c84758a9d9f70e3f38e2924e0e655"
+  },
+  "data_role": "DERIVED_PUBLIC_SUMMARY_NOT_RAW_EXECUTION_LOG",
+  "codex_actual_requests": true,
+  "codex_transport": "exec_command tty=True then write_stdin to the same process across calls",
+  "skill_auto_discovery_in_fresh_chat": "NOT_TESTED",
+  "cli_exit_code": 0,
+  "stderr_bytes": 0
+}

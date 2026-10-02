@@ -1,0 +1,10 @@
+include AGENTS.md ARCHITECTURE.md THIRD_PARTY_NOTICES.md .gitattributes
+recursive-include bodyisa/profiles *.json
+recursive-include evaluation *.json
+recursive-include tests/fixtures *.json
+recursive-include configs *.example.json
+recursive-include docs *.md *.json
+recursive-include examples *.py
+recursive-include scripts *.py
+recursive-include licenses *.txt
+recursive-include .agents/skills *.md

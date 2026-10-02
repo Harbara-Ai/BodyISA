@@ -1,0 +1,17 @@
+{
+  "robot": "g1",
+  "controller": "BFM-Zero",
+  "execution_backend": "MuJoCo",
+  "device": "cuda",
+  "seed": 91000,
+  "bfm_root": "../external/bfm_root",
+  "model_dir": "../external/model_dir",
+  "motion": "../external/motion",
+  "track_latent": "../external/track_latent",
+  "stand_latent": "../external/stand_latent",
+  "evidence_root": "../external/deployment",
+  "trust_anchor": "../external/deployment/trust.json",
+  "stand_bundle": "../external/deployment/stand_bundle.json",
+  "track_bundle": "../external/deployment/track_bundle.json",
+  "output_dir": "../runs/g1-session-001"
+}

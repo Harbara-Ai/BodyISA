@@ -1,0 +1,23 @@
+{
+  "semantic_profile": "JOINT_TRAJECTORY_V2",
+  "calibration_status": "EXPERIMENTAL_CALIBRATION",
+  "scope": "SIM_ONLY",
+  "reference_alignment": "FIXED_WORLD_V1",
+  "control_dt_s": 0.02,
+  "reference_frames": 500,
+  "clock_tolerance_s": 0.00001,
+  "joint_order": "BFM G1 policy dof_names in registered reference; 29 joints",
+  "joint_units": "radian",
+  "sample_rule": "initial q at t=0; post-step q at t=n*0.02 for n=1..499; no dynamic alignment",
+  "active_joint_range_rad": 0.5,
+  "active_joint_selection": "reference per-joint p95 minus p5 >= 0.5 rad, frozen before validation",
+  "mean_frame_rmse_limit_rad": 0.18,
+  "active_group_mean_limit_rad": 0.20,
+  "rolling_frames": 25,
+  "max_rolling_mean_rad": 0.28,
+  "local_frame_threshold_rad": 0.30,
+  "max_consecutive_excess_s": 0.20,
+  "semantic_failure_exit_policy": "latch failure, switch to registered STAND latent, attempt existing 4 s terminal stabilization; invariant violation aborts",
+  "root_world_and_heading": "diagnostic only",
+  "fk_body_metric": "FK_DERIVED_FROM_REFERENCE_JOINTS_AND_ROOT"
+}

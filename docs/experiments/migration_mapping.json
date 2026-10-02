@@ -1,0 +1,178 @@
+{
+  "schema": "BODYISA_MIGRATION_AUDIT_V1",
+  "baseline_inventory_sha256": "c6420796633264b63e77a72b125ee4d6952bf8b557ea97f6cfbbb2b57740e2a2",
+  "baseline_files_verified": 152,
+  "mapping": [
+    {
+      "old_file": "bodyisa/core.py",
+      "old_symbol": "ExecutionContract",
+      "new_file": "bodyisa/core/contracts.py",
+      "new_symbol": "ExecutionContract",
+      "change": "mechanical extraction / class relocation; method AST identical",
+      "ast_equal": true,
+      "old_sha256": "aee84fd365b8925fbefe9b29887ca2290ef1cb66ff160bc615e6b92b6ce0ba7e",
+      "new_sha256": "4ce4ab23f2283b914113c58979b0d9fee2edfe27c1c0bb6987762e512820af57"
+    },
+    {
+      "old_file": "bodyisa/core.py",
+      "old_symbol": "TransitionContract",
+      "new_file": "bodyisa/core/contracts.py",
+      "new_symbol": "TransitionContract",
+      "change": "mechanical extraction / class relocation; method AST identical",
+      "ast_equal": true,
+      "old_sha256": "aee84fd365b8925fbefe9b29887ca2290ef1cb66ff160bc615e6b92b6ce0ba7e",
+      "new_sha256": "4ce4ab23f2283b914113c58979b0d9fee2edfe27c1c0bb6987762e512820af57"
+    },
+    {
+      "old_file": "bodyisa/core.py",
+      "old_symbol": "ExecutionRuntime.tick",
+      "new_file": "bodyisa/runtime/session.py",
+      "new_symbol": "ExecutionRuntime.tick",
+      "change": "mechanical extraction / class relocation; method AST identical",
+      "ast_equal": true,
+      "old_sha256": "aee84fd365b8925fbefe9b29887ca2290ef1cb66ff160bc615e6b92b6ce0ba7e",
+      "new_sha256": "4c977ceb8e913e507174d9caed6399773aa2a32c6816cd2031543ae1a2a064d3"
+    },
+    {
+      "old_file": "bodyisa/core.py",
+      "old_symbol": "ExecutionRuntime._finish",
+      "new_file": "bodyisa/runtime/session.py",
+      "new_symbol": "ExecutionRuntime._finish",
+      "change": "mechanical extraction / class relocation; method AST identical",
+      "ast_equal": true,
+      "old_sha256": "aee84fd365b8925fbefe9b29887ca2290ef1cb66ff160bc615e6b92b6ce0ba7e",
+      "new_sha256": "4c977ceb8e913e507174d9caed6399773aa2a32c6816cd2031543ae1a2a064d3"
+    },
+    {
+      "old_file": "bodyisa/bfm_adapter.py",
+      "old_symbol": "ReferenceMotion",
+      "new_file": "bodyisa/adapters/g1/adapter.py",
+      "new_symbol": "ReferenceMotion",
+      "change": "mechanical extraction / class relocation; method AST identical",
+      "ast_equal": true,
+      "old_sha256": "c40589090fff678016343eaf4c1746b9832162cc824e7287eb4a257abe308833",
+      "new_sha256": "21c9c8a479aae9c8df6e4dfc1da5a4dd0fe84f276b577426e229b6aaebdd5a87"
+    },
+    {
+      "old_file": "bodyisa/bfm_adapter.py",
+      "old_symbol": "BFMAdapter.snapshot",
+      "new_file": "bodyisa/adapters/g1/adapter.py",
+      "new_symbol": "G1Adapter.snapshot",
+      "change": "mechanical extraction / class relocation; method AST identical",
+      "ast_equal": true,
+      "old_sha256": "c40589090fff678016343eaf4c1746b9832162cc824e7287eb4a257abe308833",
+      "new_sha256": "21c9c8a479aae9c8df6e4dfc1da5a4dd0fe84f276b577426e229b6aaebdd5a87"
+    },
+    {
+      "old_file": "bodyisa/bfm_adapter.py",
+      "old_symbol": "BFMAdapter.step",
+      "new_file": "bodyisa/adapters/g1/adapter.py",
+      "new_symbol": "G1Adapter.step",
+      "change": "mechanical extraction / class relocation; method AST identical",
+      "ast_equal": true,
+      "old_sha256": "c40589090fff678016343eaf4c1746b9832162cc824e7287eb4a257abe308833",
+      "new_sha256": "21c9c8a479aae9c8df6e4dfc1da5a4dd0fe84f276b577426e229b6aaebdd5a87"
+    },
+    {
+      "old_file": "bodyisa/bfm_adapter.py",
+      "old_symbol": "BFMAdapter.prepare",
+      "new_file": "bodyisa/adapters/g1/adapter.py",
+      "new_symbol": "G1Adapter.prepare",
+      "change": "mechanical extraction / class relocation; method AST identical",
+      "ast_equal": true,
+      "old_sha256": "c40589090fff678016343eaf4c1746b9832162cc824e7287eb4a257abe308833",
+      "new_sha256": "21c9c8a479aae9c8df6e4dfc1da5a4dd0fe84f276b577426e229b6aaebdd5a87"
+    },
+    {
+      "old_file": "bodyisa/bfm_adapter.py",
+      "old_symbol": "BFMAdapter.use_stand",
+      "new_file": "bodyisa/adapters/g1/adapter.py",
+      "new_symbol": "G1Adapter.use_stand",
+      "change": "mechanical extraction / class relocation; method AST identical",
+      "ast_equal": true,
+      "old_sha256": "c40589090fff678016343eaf4c1746b9832162cc824e7287eb4a257abe308833",
+      "new_sha256": "21c9c8a479aae9c8df6e4dfc1da5a4dd0fe84f276b577426e229b6aaebdd5a87"
+    },
+    {
+      "old_file": "bodyisa/bfm_adapter.py",
+      "old_symbol": "BFMAdapter.tracking_metrics",
+      "new_file": "bodyisa/adapters/g1/adapter.py",
+      "new_symbol": "G1Adapter.tracking_metrics",
+      "change": "mechanical extraction / class relocation; method AST identical",
+      "ast_equal": true,
+      "old_sha256": "c40589090fff678016343eaf4c1746b9832162cc824e7287eb4a257abe308833",
+      "new_sha256": "21c9c8a479aae9c8df6e4dfc1da5a4dd0fe84f276b577426e229b6aaebdd5a87"
+    },
+    {
+      "old_file": "bodyisa/admission.py",
+      "old_symbol": "EntryPolicy",
+      "new_file": "bodyisa/runtime/admission.py",
+      "new_symbol": "EntryPolicy",
+      "change": "mechanical extraction / class relocation; method AST identical",
+      "ast_equal": true,
+      "old_sha256": "211a6f39a495de92e7a84c8c591624cdc80c24f8e1938e11a8201ed50146f9d9",
+      "new_sha256": "211a6f39a495de92e7a84c8c591624cdc80c24f8e1938e11a8201ed50146f9d9"
+    },
+    {
+      "old_file": "bodyisa/admission.py",
+      "old_symbol": "SourceReceipt",
+      "new_file": "bodyisa/runtime/admission.py",
+      "new_symbol": "SourceReceipt",
+      "change": "mechanical extraction / class relocation; method AST identical",
+      "ast_equal": true,
+      "old_sha256": "211a6f39a495de92e7a84c8c591624cdc80c24f8e1938e11a8201ed50146f9d9",
+      "new_sha256": "211a6f39a495de92e7a84c8c591624cdc80c24f8e1938e11a8201ed50146f9d9"
+    },
+    {
+      "old_file": "bodyisa/track_contract_v2.py",
+      "old_symbol": "JointTrajectoryObserver",
+      "new_file": "bodyisa/profiles/g1/track_contract_v2.py",
+      "new_symbol": "JointTrajectoryObserver",
+      "change": "mechanical extraction / class relocation; method AST identical",
+      "ast_equal": true,
+      "old_sha256": "287d938dacedb11a0e1c839abc7612f1bfc8a38a8074089c40b2701f20d56d13",
+      "new_sha256": "287d938dacedb11a0e1c839abc7612f1bfc8a38a8074089c40b2701f20d56d13"
+    }
+  ],
+  "changed_responsibilities": [
+    {
+      "old_file": "bodyisa/core.py",
+      "new_file": "bodyisa/runtime/session.py",
+      "responsibility": "initialize_episode delegates same reset/set_state to G1Adapter; actual_identity delegates to adapter; target catalog and observer supplied by adapter",
+      "verification": "37 migrated legacy assertions + injection/protocol regression + required new ordinary JSONL smoke",
+      "old_sha256": "aee84fd365b8925fbefe9b29887ca2290ef1cb66ff160bc615e6b92b6ce0ba7e",
+      "new_sha256": "4c977ceb8e913e507174d9caed6399773aa2a32c6816cd2031543ae1a2a064d3"
+    },
+    {
+      "old_file": "bodyisa/evidence.py",
+      "new_file": "bodyisa/adapters/g1/identity.py",
+      "responsibility": "actual loaded model/simulator/reference/latent attestation retained; paths are explicit config; source coverage expands to all package and external BFM Python sources",
+      "verification": "all non-source historical backend identities must be exactly equal at local review",
+      "old_sha256": "06efe1e3bf12c0e8bb8bf0faeb865dc30a2e2e0f29464cbb8017a3ed4fd94cbd",
+      "new_sha256": "622769ae23859bf94899983a503b842e2372a34d3c5add20e3c92707b6fab3a6"
+    },
+    {
+      "old_file": "bodyisa/evidence.py",
+      "new_file": "bodyisa/runtime/evidence.py",
+      "responsibility": "data-only verifier now compares capability to attested adapter catalog; digest pinning, path bounds, payload hashes, review source and atomic import retained",
+      "verification": "legacy tamper/scope/atomicity regressions, final migration bundle loading",
+      "old_sha256": "06efe1e3bf12c0e8bb8bf0faeb865dc30a2e2e0f29464cbb8017a3ed4fd94cbd",
+      "new_sha256": "dc88b7c8ebf82885b8c1597fd08bc4f28b42b2bc7d46f245d981095a6c8fb9a0"
+    },
+    {
+      "old_file": "analysis/phase3_evaluate.py",
+      "new_file": "bodyisa/session_factory.py",
+      "responsibility": "same frozen cache installation moved to explicit local factory; no runner import",
+      "verification": "loaded cache tensor attestation and new JSONL smoke",
+      "old_sha256": "cb72eea43a94ae61e11c6d0680de895744e21f6d16bd51a70d31bc263c37dfbb",
+      "new_sha256": "d1ff542f792e426a2a1d3cc8b87c328e3bcb93301fd2e7e111ff2d625be2894a"
+    }
+  ],
+  "profile_bytes_unchanged": {
+    "bodyisa/config.json": true,
+    "analysis/phase31_v2_contract.json": true,
+    "analysis/phase32_entry_policy.json": true
+  },
+  "status": "PASS",
+  "data_role": "DERIVED_PUBLIC_COPY_OF_COMPATIBILITY_RECORD"
+}
