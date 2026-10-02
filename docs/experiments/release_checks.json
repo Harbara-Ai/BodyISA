@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "checked_code_commit": "5ddabf8b5a4c971318f13847f7ca6db9222b97b4",
+  "date": "2026-10-02",
+  "clean_checkout": {
+    "method": "local Git clone --no-hardlinks from committed release repository",
+    "tracked_files": 69,
+    "byte_identity": "all committed source/config/test/docs bytes preserved",
+    "baseline_unchanged_files": 152
+  },
+  "installation": {
+    "method": "build wheel from clean Git checkout; install --no-deps into separate fresh venv; run from outside checkout",
+    "import_location": "clean_env/Lib/site-packages/bodyisa",
+    "source_bytes_match": true,
+    "dependencies": "explicit read-only reuse of original third-party site-packages via new environment .pth; original BodyISA is not installed there",
+    "fresh_network_dependency_install": "NOT_TESTED",
+    "console_help": "PASS",
+    "python_module_help": "PASS",
+    "wheel_required_resources": "PASS",
+    "sdist_required_resources": "PASS",
+    "wheel_sha256": "532471977924bc2c18b2c90e06fd0558417e61b171d239073a5f1ca3c13faae5",
+    "sdist_sha256": "cbcb47d44ac315d7bd550bd6b592b31ea6fa303c2de8673f39bab5d46d22be30",
+    "archive_scope": "archives built at checked_code_commit, before adding this derived report"
+  },
+  "regression": {
+    "passed": 44,
+    "skipped": 0,
+    "failed": 0,
+    "original_tests_preserved": 37,
+    "new_protocol_injection_tests": 7,
+    "different_working_directory": true
+  },
+  "asset_precheck": {
+    "status": "INPUTS_VERIFIED",
+    "bfm_source_files": 14,
+    "model_simulator_initialization": false,
+    "stderr_bytes": 0
+  },
+  "publication": {
+    "private_paths_and_credentials_scan": "PASS",
+    "maximum_file_bytes": 26527,
+    "large_assets_raw_rollouts_local_config": "EXCLUDED",
+    "author": "Codex <codex@openai.com>",
+    "committer": "Codex <codex@openai.com>",
+    "line_endings": "preserved with -text; diff checked with cr-at-eol,-blank-at-eof to retain reviewed bytes"
+  },
+  "physical_smoke": {
+    "status": "SMOKE_PASS",
+    "new_runs": 1,
+    "direct_raw_log_checks": 41,
+    "codex_sent_requests_to_same_process": true,
+    "fresh_chat_skill_autodiscovery": "NOT_TESTED",
+    "repeated_in_clean_checkout": false
+  },
+  "local_log_sha256": {
+    "clean_regression.txt": "d4c24c855a2242d6d7f2eb68133d1147eab4fd9ca84f9a1143cf3a22f8f3bd29",
+    "clean_precheck.json": "50ec4858d073b6450575b588c0cd5ac8ece877627e7276c05f35b8bec0c18a29",
+    "clean_precheck_stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "clean_install.txt": "daf01c584b6f899eb9a16961d8bd6421abe66f184f19e1577850739b0461499b",
+    "clean_wheel_build.txt": "201b2430d909873457c10e271d249d93052dd4a3ee8ff92da37e5a1ec16ba56c",
+    "clean_sdist_build.txt": "1dc51a46fead45f4fae90d0c674530ffd6544e42a502616dcdeb4107c198b124"
+  }
+}
